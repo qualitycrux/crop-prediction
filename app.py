@@ -4,11 +4,11 @@ import pandas as pd
 import pickle
 
 #1. load model
-model=pickle.load(open("model-crop-predection.pkl","rb"))
+model=pickle.load(open("model-crop-prediction.pkl","rb"))
 #load scaler
-scaler=pickle.load(open("scaler-crop-preciction.pkl","rb"))
+scaler=pickle.load(open("scaler-crop-prediction.pkl","rb"))
 #load encoder
-le=pickle.load(open("encoder-crop-preciction.pkl","rb"))
+le=pickle.load(open("encoder-crop-prediction.pkl","rb"))
 
 def predict(N,P,K,temperature,humidity,ph,rainfall):
     # get input into dataframes

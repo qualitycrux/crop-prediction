@@ -21,7 +21,7 @@ def predict(N,P,K,temperature,humidity,ph,rainfall):
     result=le.inverse_transform(prediction)
     return result
 
-st.title("Crop Prediction Application")
+st.title("Crop Prediction Application : RandomForestClassifier")
 
 
 col1,col2= st.columns(2)
